@@ -9,7 +9,7 @@
 /* 示例：自定义字体声明 */
 @font-face {
   font-family: 'MapleMono NF CN';
-  src: url('../assets/fonts/MapleMono-NF-CN-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/MapleMono-NF-CN-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
