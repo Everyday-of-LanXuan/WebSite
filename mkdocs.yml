@@ -5,7 +5,7 @@
 # ========================================
 
 # 【必改】你的文档站名称（其他全不用改！）
-site_name: "我的知识库"  # ← 这里改成你的名字/项目名
+site_name: "蓝轩宇应援"  # ← 这里改成你的名字/项目名
 site_url: https://xy.dudu7615.dpdns.org/
 
 # 主题配置（已优化到极致，放心用！）
@@ -33,6 +33,7 @@ extra:
   social:                   # 页脚社交链接（不需要可删）
     - icon: fontawesome/brands/github
       link: https://github.com/Everyday-of-LanXuan
+
 
 # 自定义样式
 extra_css:
