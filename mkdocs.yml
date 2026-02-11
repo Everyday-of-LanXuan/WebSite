@@ -34,6 +34,10 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Everyday-of-LanXuan
 
+# 自定义样式
+extra_css:
+  - css/custom.css
+
 # 插件（Material内置，无需安装！）
 plugins:
   - search                # 全文搜索（开箱即用）
