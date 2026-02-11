@@ -25,5 +25,8 @@ jobs:
       - name: Install uv
         run: pip install uv
 
+      - name: Fix git conflict
+        run: git fetch origin gh-pages && git pull origin gh-pages --rebase
+
       - name: Run Bulid
         run: uv run mkdocs gh-deploy
