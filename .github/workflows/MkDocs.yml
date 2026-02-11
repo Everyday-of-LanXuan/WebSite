@@ -16,6 +16,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Fix git conflict
+        run: git fetch origin gh-pages && git reset --hard origin/gh-pages
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -24,9 +27,6 @@ jobs:
 
       - name: Install uv
         run: pip install uv && uv sync
-
-      - name: Fix git conflict
-        run: git fetch origin gh-pages && git reset --hard origin/gh-pages
 
       - name: Run Bulid
         run: uv run mkdocs gh-deploy
