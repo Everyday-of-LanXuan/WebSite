@@ -25,8 +25,8 @@ jobs:
       - name: Install uv
         run: pip install uv
 
+      - name: Pull latest changes from gh-pages
+        run: git pull origin gh-pages
+
       - name: Run Bulid
         run: uv run mkdocs gh-deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
