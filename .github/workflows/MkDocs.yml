@@ -1,0 +1,29 @@
+name: MkDocs Auto Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  black-format:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: "pip"
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Run Bulid
+        run: uv run mkdocs gh-deploy
