@@ -27,3 +27,6 @@ jobs:
 
       - name: Run Bulid
         run: uv run mkdocs gh-deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
