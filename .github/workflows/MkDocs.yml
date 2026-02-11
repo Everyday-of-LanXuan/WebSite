@@ -26,7 +26,7 @@ jobs:
         run: pip install uv
 
       - name: Fix git conflict
-        run: git fetch origin gh-pages && git pull origin gh-pages --rebase
+        run: git fetch origin gh-pages && git reset --hard origin/gh-pages
 
       - name: Run Bulid
         run: uv run mkdocs gh-deploy
