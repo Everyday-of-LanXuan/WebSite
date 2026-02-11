@@ -25,5 +25,5 @@ jobs:
       - name: Install uv
         run: pip install uv && uv sync
 
-      - name: Run Bulid
-        run: uv run mkdocs gh-deploy
+      - name: Run Build
+        run: uv run mkdocs gh-deploy --force
