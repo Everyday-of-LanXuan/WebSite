@@ -11,6 +11,7 @@ site_url: https://xy.dudu7615.dpdns.org/
 # 主题配置（已优化到极致，放心用！）
 theme:
   name: material
+  custom_dir: overrides 
   # 💡 配色方案（三选一，不改也超美！复制下面任一行取消注释即可）：
   #palette: { primary: teal, accent: teal }      # 清新科技蓝
   #palette: { primary: deep-purple, accent: pink } # 优雅紫粉调
