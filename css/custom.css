@@ -1,0 +1,46 @@
+/* ========================================
+ * 自定义字体配置
+ * 使用说明：
+ * 1. 将TTF字体文件放在 docs/assets/fonts/ 目录中
+ * 2. 在下面的@font-face中修改font-family名称和文件路径
+ * 3. 然后在body或其他选择器中应用这个字体
+ * ======================================== */
+
+/* 示例：自定义字体声明 */
+@font-face {
+  font-family: 'MapleMono NF CN';
+  src: url('../assets/fonts/MapleMono-NF-CN-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+ * 可选：多种字体格式支持（更好的兼容性）
+ * 如果你的字体有多种格式文件（.ttf, .woff, .woff2等），可以这样写：
+ */
+/*
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../assets/fonts/your-font.woff2') format('woff2'),
+       url('../assets/fonts/your-font.woff') format('woff'),
+       url('../assets/fonts/your-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+/* 应用自定义字体到全局 */
+/* 取消注释下面的代码来应用字体 */
+
+:root {
+  --md-text-font: 'MapleMono NF CN';
+  --md-code-font: 'MapleMono NF CN';
+}
+
+
+/* 或者只应用到特定元素 */
+/*
+body {
+  font-family: 'CustomFont', sans-serif;
+}
+*/
